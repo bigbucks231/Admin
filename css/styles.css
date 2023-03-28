@@ -54,18 +54,22 @@ img {
 
 h1 {
     font-size: 2.2rem;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h4 {
     font-size: 1rem;
+    font-weight: 700;
 }
 
 h5 {
@@ -75,6 +79,11 @@ h5 {
 
 h6 {
     font-size: 0.76rem;
+    color: var(--color-gray-dark);
+}
+
+p {
+    font-size: 0.86rem;
     color: var(--color-gray-dark);
 }
 
@@ -388,9 +397,9 @@ main section.middle .card .top .left h2 {
 main section.middle .card .top .left img {
     width: 2.3rem;
     height: 2.3rem;
-    border-radius: 1px solid white;
-     border-radius: var(--border-radius-2);
-     padding: 0.4rem;
+    border: 1px solid white;
+    border-radius: var(--border-radius-2);
+    padding: 0.4rem;
 }
 
 main section.middle .card .top  img.right {
@@ -430,4 +439,80 @@ main .monthlyReport {
 main .monthlyReport h1 {
     font-weight: 700;
     font-size: 1.8rem;
+}
+
+/* ====================Fast Payments====================  */
+
+main .fastPayments {
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+    align-items: center;
+}  
+
+main .fastPayments h5{
+    color: black;
+}
+
+main .fastPayments h4{
+    color: black;
+}
+
+main .fastPayments .badge span{
+    color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+
+main .fastPayments .badges{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main .fastPayments .badge{
+    padding: 0.6rem var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main .fastPayments .badge:hover {
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main .fastPayments .badge:first-child span{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+main .fastPayments .badge div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* ====================Canvas====================  */
+
+canvas#charts {
+    background: var(--color-white);
+    margin-top: 2rem;
+    max-width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+
 }
