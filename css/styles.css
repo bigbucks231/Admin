@@ -362,6 +362,7 @@ main section.middle .cards .card {
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
     transition: all 300ms ease;
+    min-width: 24rem;
 }
 
 main section.middle .cards .card:nth-child(2) {
@@ -508,7 +509,7 @@ main .fastPayments .badge div {
 
 /* ====================Canvas====================  */
 
-canvas#charts {
+canvas#chart {
     background: var(--color-white);
     margin-top: 2rem;
     max-width: 100%;
