@@ -74,7 +74,7 @@ h5 {
 }
 
 h6 {
-    font-size: 7.6rem;
+    font-size: 0.76rem;
     color: var(--color-gray-dark);
 }
 
@@ -415,4 +415,19 @@ main section.middle .card .bottom {
 main section.middle .card .bottom .right {
     display: flex;
     gap: 2rem;
+}
+
+/* ====================Monthly Report====================  */
+
+main .monthlyReport {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+main .monthlyReport h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
 }
