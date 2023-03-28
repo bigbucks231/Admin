@@ -26,3 +26,29 @@ new Chart(chart, {
         responsive: true
     }
 })
+
+// show or hide sidebar
+
+const menuBtn = document.querySelector('#menuBtn');
+const closeButton = document.querySelector('#closeButton');
+const sidebar = document.querySelector('aside');
+
+
+menuBtn.addEventListener('click', () => {
+    sidebar.style.display = 'block';
+})
+
+closeButton.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+})
+
+// change theme 
+
+const themeBtn = document.querySelector('.themeBtn');
+
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('darkTheme');
+
+    themeBtn.querySelector('span:first-child').classList.toggle('active');
+    themeBtn.querySelector('span:last-child').classList.toggle('active');
+})
